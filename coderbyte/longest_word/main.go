@@ -13,7 +13,8 @@ func LongestWord(sen string) string {
 	size := len(result[0])
 
 	for i := range result {
-		if size > len(result[i]) {
+
+		if size <= len(result[i]) {
 			sen = result[i]
 		}
 	}
